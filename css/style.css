@@ -37,10 +37,17 @@ body{
 	text-transform: lowercase;
 	letter-spacing: -8px;
 }
+.initals:hover{
+	letter-spacing: 0em;
+	width: 600px;
+}
 .e{
 	font-family: 'Raleway', sans-serif;
 	color: white;
     text-transform: lowercase;
+}
+.e:hover{
+	letter-spacing: 4em;
 }
 .fa-bars{
 	text-align: center;
@@ -131,6 +138,8 @@ body{
 .fun{
 	padding-top: 30px;
 }
+
+/*----- projects section -----*/
 .projects{
 	height: 560px;
 }
@@ -174,7 +183,7 @@ img{
     margin-bottom: 0px;
     position: relative;
     top: -315px;
-    left: 10px;
+    padding-left: 0px;
 }
 .links li{
 	display: inline-block;
@@ -189,4 +198,48 @@ img{
 	width: 236px;
     height: 163px;
     margin: auto;
+}
+.chrome{
+	padding-right: 50px
+}
+.fa-chrome{
+	width: 32px;
+}
+.fa-github{
+	width: 32px;
+    padding-left: 1px;
+    font-size: 1.1em;
+}
+
+/*---- footer section -----*/
+footer{
+	background-color: #8e8e8e !important;
+	height: 100px;
+}
+.contact{
+	text-align: center;
+	font-family: 'Raleway', sans-serif;
+    color: #777777 !important;
+	margin-left: 415px;
+    margin-right: 415px;
+}
+.social-list{
+	list-style: none;
+	text-align: center;
+	font-size: 1.8em;
+	padding-left: 0px;
+}
+.social-list li{
+	display: inline-block;
+	width: 35px;
+}
+.social-list li i{
+	color: #d7d7d7;
+}
+.social-list li i:hover{
+	color: #4b4b4b;
+}
+.github{
+	width: 35px;
+	padding-left: 0px;
 }

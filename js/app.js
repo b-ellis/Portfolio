@@ -7,6 +7,13 @@ var hover = function(){
 	});
 };
 
+var nameHover = function(){
+	$('.col-md-2').mouseover(function(){
+		$('.initals').text('bradley')
+		$('.e').text('ellis');
+	});
+}
+
 $(document).ready(function(){
 	hover();
 })
