@@ -10,6 +10,7 @@ body{
     position: fixed !important;
     width: 100%;
     opacity: 0.69;
+    z-index: 99;
 }
 .navbar-container{
     height: 80px;
@@ -131,14 +132,61 @@ body{
 	padding-top: 30px;
 }
 .projects{
-	height: 620px;
+	height: 560px;
+}
+.projects-container{
+	height: 385px;
 }
 .projects-title{
 	font-family: 'Raleway', sans-serif;
     color: #777777 !important;
     text-align: center;
     font-size: 8em;
-    margin-top: 150px;
     top: 25px;
     position: relative;
+}
+.display-container{
+	border: 1px solid #4b4b4b;
+	border-radius: 3px;
+    width: 552px;
+    height: 260px;
+    text-align: center;
+    margin-left: 415px;
+    margin-right: 415px;
+    position: relative;
+    top: 125px;
+    right: 50px;
+    opacity: .5;
+}
+.display-container:hover{
+	background-color: #4b4b4b;
+	opacity: .2;
+}
+img{
+	width: 552px;
+    height: 260px;
+    position: relative;
+    bottom: 153px;
+}
+.links{
+	list-style: none;
+	height: 45px;
+    margin-bottom: 0px;
+    position: relative;
+    top: -315px;
+    left: 10px;
+}
+.links li{
+	display: inline-block;
+	font-size: 2.3em;
+	letter-spacing: 2em;
+}
+.links li:hover{
+	color: #d7d7d7;
+}
+.link-container{
+	display: none;
+	width: 236px;
+    height: 163px;
+    margin: auto;
 }
