@@ -158,7 +158,7 @@ body{
 	border: 1px solid #4b4b4b;
 	border-radius: 3px;
     width: 552px;
-    height: 260px;
+    height: 270px;
     text-align: center;
     margin-left: 415px;
     margin-right: 415px;
@@ -171,18 +171,21 @@ body{
 	background-color: #4b4b4b;
 	opacity: .2;
 }
+.img{
+	height: 260px;
+}
 img{
-	width: 552px;
+	width: 550px;
     height: 260px;
     position: relative;
     bottom: 153px;
+    top: -148px;
 }
 .links{
 	list-style: none;
-	height: 45px;
+    height: 45px;
     margin-bottom: 0px;
     position: relative;
-    top: -315px;
     padding-left: 0px;
 }
 .links li{
@@ -195,8 +198,8 @@ img{
 }
 .link-container{
 	display: none;
-	width: 236px;
-    height: 163px;
+	position: relative;
+    bottom: 160px;
     margin: auto;
 }
 .chrome{
@@ -209,6 +212,15 @@ img{
 	width: 32px;
     padding-left: 1px;
     font-size: 1.1em;
+}
+.next{
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    border: 0px;
+    background-color: rgba(191, 191, 191, 0);
+    font-size: 2em;
+    padding: 0px 5px;
 }
 
 /*---- footer section -----*/
