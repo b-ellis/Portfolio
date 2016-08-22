@@ -7,9 +7,28 @@ var displayContentHover = function(){
 	});
 };
 
+var initalChange = function(){
+	$('.col-md-2').mouseover(function(){
+		$('.initals').hide();
+		$('.name').show();
+	});
+	$('.col-md-2').mouseleave(function(){
+		$('.name').hide();
+		$('.initals').show();
+	});
+};
+
+var scrollToTop = function(){
+	$('.col-md-2').click(function(){
+		$('html,body').animate({scrollTop:0}, 'fast');
+	});
+};
 
 
 $(document).ready(function(){
+
+	initalChange();
+	scrollToTop();
 	displayContentHover();
 
 	var projectPhish = {
@@ -36,20 +55,25 @@ $(document).ready(function(){
 	var projects = [projectPhish, projectJam, projectList, projectToe];
 	var currentProjectIndex = 0;
 
+	displayProjects();
+
 	$('.next').click(function(){
 		currentProjectIndex++
 		$('.img').html('');
 		$('.link-container > ul').html('');
 		if (currentProjectIndex < projects.length){
 			displayProjects();
-		}
+		};
+		if(currentProjectIndex == projects.length-1){
+			currentProjectIndex = 0
+		};
 	});
 
-	var displayProjects = function (){
+	function displayProjects(){
 		var currentProject = projects[currentProjectIndex];
 		var projectImg = "<img class='img' src=\"" + currentProject.image + "\">";
 		$('.img').html(projectImg);
-		var projectUrl = "<li class='chrome'><a href='\"" + currentProject.url + "\"'><i class='fa fa-chrome' aria-hidden='true'></i></a></li><li class='githublist'><a href='\"" + currentProject.giturl + "\"'><i class='fa fa-github' aria-hidden='true'></i></a></li>";
+		var projectUrl = "<li class='chrome'><a href=\"" + currentProject.url + "\"><i class='fa fa-chrome' aria-hidden='true'></i></a></li><li class='githublist'><a href=\"" + currentProject.giturl + "\"><i class='fa fa-github' aria-hidden='true'></i></a></li>";
 		$('.link-container > ul').html(projectUrl);
 	};
 })

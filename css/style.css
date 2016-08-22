@@ -46,38 +46,13 @@ body{
 	color: white;
     text-transform: lowercase;
 }
-.e:hover{
-	letter-spacing: 4em;
+.name{
+	display: none;
+	font-family: 'Raleway', sans-serif;
 }
-.fa-bars{
-	text-align: center;
-    padding: 0px;
-    font-size: 2em !important;
-    margin-bottom: 0px;
-    margin-top: 22px;
-    height: 40px;
-    width: 50px;
-    float: right;
-}
-.navbar-dropdown{
-	width: 70px;
-    height: 70px;
-    padding-left: 10px;
-}
-.btn{
-	float: right;
-}
-.btn-primary{
-	padding-right: 0px;
-	color: #4b4b4b !important;
-	background-color: #8e8e8e !important;
-	border: none !important;
-}
-.btn-primary:active{
-	-webkit-box-shadow: none;
-}
-.dropdown-menu{
-	display: block;
+.lname{
+	font-family: 'Raleway', sans-serif;
+	color: white;
 }
 
 /* ----- intro section -----*/
