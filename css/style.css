@@ -2,6 +2,9 @@ body{
 	height: 100%;
     background-color: #808080 !important;
 }
+a{
+	color: #d7d7d7;
+}
 
 /*----- navigation section ------*/
 .navbar{
@@ -182,11 +185,19 @@ img{
 }
 .fa-chrome{
 	width: 32px;
+	color: #4b4b4b !important;
 }
-.fa-github{
+.fa-chrome:hover{
+	color: #808080 !important;
+}
+.links .fa-github{
+	color: #4b4b4b !important;
 	width: 32px;
     padding-left: 1px;
     font-size: 1.1em;
+}
+.links .fa-github:hover{
+	color: #808080 !important;
 }
 .next{
     position: absolute;

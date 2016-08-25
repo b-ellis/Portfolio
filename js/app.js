@@ -31,28 +31,18 @@ $(document).ready(function(){
 	scrollToTop();
 	displayContentHover();
 
-	var projectPhish = {
-		image: 'images/phish-quiz.png',
-		url: 'https://b-ellis.github.io/Quiz/',
-		giturl: 'https://github.com/b-ellis/Quiz'
-	}
-	var projectToe = {
-		image: 'images/tic-tac-toe.png',
-		url: 'https://b-ellis.github.io/Tic-Tac-Toe/',
-		giturl: 'https://github.com/b-ellis/Tic-Tac-Toe'
-	}
-	var projectList = {
-		image: 'images/shoppinglist.png',
-		url: 'https://b-ellis.github.io/Shoppinglist/',
-		giturl:'https://github.com/b-ellis/Shoppinglist'
-	}
-	var projectJam = {
-		image: 'images/jam-location.png',
-		url: 'https://b-ellis.github.io/Jam-Location/',
-		giturl: 'https://github.com/b-ellis/Jam-Location/tree/gh-pages'
-	}
+	var Project = function(image, url, giturl){
+		this.image = image;
+		this.url = url;
+		this.giturl = giturl;
+	};
 
-	var projects = [projectPhish, projectJam, projectList, projectToe];
+	var phish = new Project('images/phish-quiz.png', 'https://b-ellis.github.io/Quiz/', 'https://github.com/b-ellis/Quiz');
+	var toe = new Project('images/tic-tac-toe.png', 'https://b-ellis.github.io/Tic-Tac-Toe/', 'https://github.com/b-ellis/Tic-Tac-Toe');
+	var list = new Project('images/shoppinglist.png', 'https://b-ellis.github.io/Shoppinglist/', 'https://github.com/b-ellis/Shoppinglist');
+	var jam = new Project('images/jam-location.png', 'https://b-ellis.github.io/Jam-Location/', 'https://github.com/b-ellis/Jam-Location/tree/gh-pages');
+
+	var projects = [phish, jam, toe, list];
 	var currentProjectIndex = 0;
 
 	displayProjects();
@@ -61,11 +51,12 @@ $(document).ready(function(){
 		currentProjectIndex++
 		$('.img').html('');
 		$('.link-container > ul').html('');
-		if (currentProjectIndex < projects.length){
+		if (currentProjectIndex < projects.length) {
 			displayProjects();
 		};
-		if(currentProjectIndex == projects.length-1){
-			currentProjectIndex = 0
+		if(currentProjectIndex == projects.length){
+			currentProjectIndex = 0;
+			displayProjects();
 		};
 	});
 
@@ -75,5 +66,6 @@ $(document).ready(function(){
 		$('.img').html(projectImg);
 		var projectUrl = "<li class='chrome'><a href=\"" + currentProject.url + "\"><i class='fa fa-chrome' aria-hidden='true'></i></a></li><li class='githublist'><a href=\"" + currentProject.giturl + "\"><i class='fa fa-github' aria-hidden='true'></i></a></li>";
 		$('.link-container > ul').html(projectUrl);
+
 	};
-})
+});
