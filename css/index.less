@@ -1,0 +1,276 @@
+@import "../node_modules/bootstrap-less/bootstrap/index";
+
+@main-grey: #808080;
+@grey: #8e8e8e;
+@light-grey: #d7d7d7;
+@title-grey: #777777;
+
+@raleway: 'Raleway', sans-serif;
+
+body {
+	height: 100%;
+    background-color: @main-grey !important;
+}
+a {
+	color: @light-grey;
+}
+
+/*----- navigation section ------*/
+.navbar {
+	margin: 0px !important;
+    background-color: @grey !important;
+    position: fixed !important;
+    width: 100%;
+    opacity: 0.69;
+    z-index: 99;
+}
+.navbar-container {
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    display: -webkit-inline-box
+}
+.navbar-initals {
+	padding: 10px;
+    margin-left: 10px;
+    height: 70px;
+    width: 70px;
+
+    h1 {
+    font-family: @raleway;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 5px;
+	height: 40px;
+    width: 50px;
+    }
+}
+.initals {
+	font-family: @raleway;
+	text-transform: lowercase;
+	letter-spacing: -8px;
+}
+.initals:hover {
+	letter-spacing: 0em;
+	width: 600px;
+}
+.e {
+	font-family: @raleway;
+	color: white;
+    text-transform: lowercase;
+}
+.name {
+	display: none;
+	font-family: @raleway;
+}
+.lname {
+	font-family: @raleway;
+	color: white;
+}
+
+/* ----- intro section -----*/
+.introduction {
+	height: 620px;
+	background-color: @grey;
+}
+.introduction {
+	.col-md-12 {
+		float: none;
+	}
+}
+.who-container {
+	padding: 150px 100px 0 100px;
+	top: 25px;
+    position: relative;
+
+    h1 {
+	    font-family: @raleway;
+		color: @title-grey !important;
+		text-align: center;
+	    font-size: 8em;
+    }
+}
+.description-container {
+	position: relative;
+    top: -50px;
+}
+.description {
+	text-align: center;
+    margin-left: 415px;
+    margin-right: 415px;
+    font-family: @raleway;
+    color: @light-grey;
+}
+/* ------ about me ------ */
+.about-me { 
+	height: 620px;
+
+	h1 {
+	    font-family: @raleway;
+		color: @title-grey !important;
+		text-align: center;
+	    font-size: 8em;
+    }
+}
+.info-me {
+	font-family: @raleway;
+    color: white !important;
+    text-align: center;
+    font-size: 8em;
+    margin-top: 150px;
+    top: 25px;
+    position: relative;
+}
+.my-info {
+	position: relative;
+	top: -30px;
+	font-size: 1.2em;
+    text-align: center;
+    margin-left: 415px;
+    margin-right: 415px;
+    font-family: @raleway;
+    color: @light-grey;
+    text-transform: lowercase;
+}
+.fun {
+	padding-top: 30px;
+}
+/*----- projects section -----*/
+.projects {
+	height: 560px;
+}
+.projects-container {
+	height: 385px;
+
+	h1 {
+	    font-family: @raleway;
+		color: @title-grey !important;
+		text-align: center;
+	    font-size: 8em;
+    }
+}
+.projects-title {
+	font-family: @raleway;
+    color: white !important;
+    text-align: center;
+    font-size: 8em;
+    top: 25px;
+    position: relative;
+}
+.display-container {
+	border: 1px solid #4b4b4b;
+	border-radius: 3px;
+    width: 552px;
+    height: 270px;
+    text-align: center;
+    margin-left: 415px;
+    margin-right: 415px;
+    position: relative;
+    top: 125px;
+    right: 50px;
+    opacity: .5;
+
+    &:hover {
+		background-color: #4b4b4b;
+		opacity: .2;
+	}
+}
+.img {
+	height: 260px;
+}
+img {
+	width: 550px;
+    height: 260px;
+    position: relative;
+    bottom: 153px;
+    top: -148px;
+}
+.links {
+	list-style: none;
+    height: 45px;
+    margin-bottom: 0px;
+    position: relative;
+    padding-left: 0px;
+
+    li{
+	    display: inline-block;
+		font-size: 2.3em;
+		letter-spacing: 2em;
+
+		&:hover {
+    		color: @light-grey;
+    	}
+    }
+    .fa-github {
+		color: #4b4b4b !important;
+		width: 32px;
+	    padding-left: 1px;
+	    font-size: 1.1em;
+
+	    &:hover {
+			color: @main-grey !important;
+		}
+	}
+}
+.link-container {
+	display: none;
+	position: relative;
+    bottom: 160px;
+    margin: auto;
+}
+.chrome {
+	padding-right: 50px
+}
+.fa-chrome {
+	width: 32px;
+	color: #4b4b4b !important;
+
+	&:hover {
+		color: @main-grey !important;
+	}
+}
+.next { 
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+    border: 0px;
+    background-color: rgba(191, 191, 191, 0);
+    font-size: 2em;
+    padding: 0px 5px;
+}
+
+/*---- footer section -----*/
+footer {
+	background-color: @grey !important;
+	height: 100px;
+}
+.contact {
+	text-align: center;
+	font-family: @raleway;
+    color: white !important;
+	margin-left: 415px;
+    margin-right: 415px;
+}
+.social-list {
+	list-style: none;
+	text-align: center;
+	font-size: 1.8em;
+	padding-left: 0px;
+
+	li {
+		display: inline-block;
+		width: 35px;
+
+		i {
+			color: @light-grey;
+
+			&:hover {
+				color: #4b4b4b;
+			}
+		}
+	}
+}
+.github {
+	width: 35px;
+	padding-left: 0px;
+}
