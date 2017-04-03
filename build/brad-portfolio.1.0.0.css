@@ -6582,6 +6582,7 @@ a {
   text-transform: lowercase;
 }
 .name {
+  cursor: 'pointer';
   display: none;
   font-family: 'Raleway', sans-serif;
 }
