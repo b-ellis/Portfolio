@@ -42,10 +42,10 @@ $(document).ready(function(){
 	// var phish = new Project('../images/phish-quiz.png', 'https://b-ellis.github.io/Quiz/', 'https://github.com/b-ellis/Quiz');
 	// var toe = new Project('../images/tic-tac-toe.png', 'https://b-ellis.github.io/Tic-Tac-Toe/', 'https://github.com/b-ellis/Tic-Tac-Toe');
 	// var list = new Project('../images/shoppinglist.png', 'https://b-ellis.github.io/Shoppinglist/', 'https://github.com/b-ellis/Shoppinglist');
-	var jam = new Project('../build/images/jam-location.png', 'https://b-ellis.github.io/Jam-Location/', 'https://github.com/b-ellis/Jam-Location/tree/gh-pages');
-	var Fullstack = new Project('../build/images/Fullstack-Capstone.png', 'https://thinkfulcapstone.herokuapp.com', 'https://github.com/b-ellis/Fullstack-capstone');
-	var node = new Project('../build/images/Node-Capstone.png','https://salty-hollows-61107.herokuapp.com/', 'https://github.com/b-ellis/node-capstone');
-	var React = new Project('../build/images/React-Capstone.png','https://react-capstone.herokuapp.com/','https://github.com/b-ellis/react-capstone');
+	var jam = new Project('../images/jam-location.png', 'https://b-ellis.github.io/Jam-Location/', 'https://github.com/b-ellis/Jam-Location/tree/gh-pages');
+	var Fullstack = new Project('../images/Fullstack-Capstone.png', 'https://thinkfulcapstone.herokuapp.com', 'https://github.com/b-ellis/Fullstack-capstone');
+	var node = new Project('../images/Node-Capstone.png','https://salty-hollows-61107.herokuapp.com/', 'https://github.com/b-ellis/node-capstone');
+	var React = new Project('../images/React-Capstone.png','https://react-capstone.herokuapp.com/','https://github.com/b-ellis/react-capstone');
 
 	var projects = [jam, node, React, Fullstack];
 	var currentProjectIndex = 0;
