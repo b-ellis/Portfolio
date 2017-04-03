@@ -44,10 +44,10 @@ $(document).ready(function(){
 	// var list = new Project('../images/shoppinglist.png', 'https://b-ellis.github.io/Shoppinglist/', 'https://github.com/b-ellis/Shoppinglist');
 	var jam = new Project('../build/images/jam-location.png', 'https://b-ellis.github.io/Jam-Location/', 'https://github.com/b-ellis/Jam-Location/tree/gh-pages');
 	var Fullstack = new Project('../build/images/Fullstack-Capstone.png', 'https://thinkfulcapstone.herokuapp.com', 'https://github.com/b-ellis/Fullstack-capstone');
-	var Node = new Project('../build/images/Node-Capstone.png','https://salty-hollows-61107.herokuapp.com/', 'https://github.com/b-ellis/node-capstone');
+	var node = new Project('../build/images/Node-Capstone.png','https://salty-hollows-61107.herokuapp.com/', 'https://github.com/b-ellis/node-capstone');
 	var React = new Project('../build/images/React-Capstone.png','https://react-capstone.herokuapp.com/','https://github.com/b-ellis/react-capstone');
 
-	var projects = [jam, Node, React, Fullstack];
+	var projects = [jam, node, React, Fullstack];
 	var currentProjectIndex = 0;
 
 	displayProjects();
