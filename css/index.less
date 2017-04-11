@@ -81,11 +81,13 @@ a {
 	}
 }
 .who-container {
+	margin: auto;
 	padding: 150px 100px 0 100px;
 	top: 25px;
     position: relative;
 
     h1 {
+    	margin: auto;
 	    font-family: @raleway;
 		color: @title-grey !important;
 		text-align: center;
@@ -97,11 +99,21 @@ a {
     top: -50px;
 }
 .description {
+	width: 450px;
+	margin: auto;
 	text-align: center;
-    margin-left: 415px;
-    margin-right: 415px;
     font-family: @raleway;
     color: @light-grey;
+}
+@media only screen and(max-width: 1213px){
+	.who-container{
+		h1{
+			margin: auto;
+		}
+	}
+	.description{
+		width: 390px;
+	}
 }
 /* ------ about me ------ */
 .about-me { 
@@ -124,12 +136,12 @@ a {
     position: relative;
 }
 .my-info {
+	width: 425px;
 	position: relative;
 	top: -30px;
 	font-size: 1.2em;
     text-align: center;
-    margin-left: 415px;
-    margin-right: 415px;
+    margin: auto;
     font-family: @raleway;
     color: @light-grey;
     text-transform: lowercase;
@@ -165,11 +177,9 @@ a {
     width: 552px;
     height: 270px;
     text-align: center;
-    margin-left: 415px;
-    margin-right: 415px;
+    margin: auto;
     position: relative;
     top: 125px;
-    right: 50px;
     opacity: .5;
 
     &:hover {
@@ -239,6 +249,33 @@ img {
     background-color: rgba(191, 191, 191, 0);
     font-size: 2em;
     padding: 0px 5px;
+}
+
+@media only screen and (max-width: 991px){
+	.display-container {
+		border: 1px solid #4b4b4b;
+		border-radius: 3px;
+	    width: 552px;
+	    height: 270px;
+	    text-align: center;
+	    margin: auto;
+	    position: relative;
+	    top: -30px;
+	    opacity: .5;
+
+	    &:hover {
+			background-color: #4b4b4b;
+			opacity: .2;
+		}
+	}
+
+	img {
+		width: 550px;
+	    height: 260px;
+	    position: relative;
+	    bottom: 153px;
+	    top: 4px;
+	}
 }
 
 /*---- footer section -----*/

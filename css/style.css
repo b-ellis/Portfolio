@@ -138,11 +138,9 @@ a{
     width: 552px;
     height: 270px;
     text-align: center;
-    margin-left: 415px;
-    margin-right: 415px;
+    margin: auto;
     position: relative;
     top: 125px;
-    right: 50px;
     opacity: .5;
 }
 .display-container:hover{
