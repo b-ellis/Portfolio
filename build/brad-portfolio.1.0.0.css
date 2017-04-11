@@ -6787,11 +6787,11 @@ footer {
   height: 100px;
 }
 .contact {
+  padding-top: 10px;
   text-align: center;
   font-family: 'Raleway', sans-serif;
   color: white !important;
-  margin-left: 415px;
-  margin-right: 415px;
+  margin: auto;
 }
 .social-list {
   list-style: none;
@@ -6812,5 +6812,10 @@ footer {
 .github {
   width: 35px;
   padding-left: 0px;
+}
+@media only screen and (max-width: 991px) {
+  .footer-container {
+    padding-top: 10px;
+  }
 }
 /*# sourceMappingURL=brad-portfolio.1.0.0.css.map */
