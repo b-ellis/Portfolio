@@ -6800,10 +6800,12 @@ footer {
   padding-left: 0px;
 }
 .social-list li {
+  cursor: pointer;
   display: inline-block;
   width: 35px;
 }
 .social-list li i {
+  cursor: pointer;
   color: #d7d7d7;
 }
 .social-list li i:hover {
