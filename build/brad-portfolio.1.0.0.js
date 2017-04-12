@@ -92,7 +92,7 @@
 		var Fullstack = new Project('https://b-ellis.github.io/Portfolio/images/Fullstack-Capstone.png', 'https://thinkfulcapstone.herokuapp.com', 'https://github.com/b-ellis/Fullstack-capstone');
 		var node = new Project('https://b-ellis.github.io/Portfolio/images/Node-Capstone.png','https://salty-hollows-61107.herokuapp.com/', 'https://github.com/b-ellis/node-capstone');
 		var React = new Project('https://b-ellis.github.io/Portfolio/images/React-Capstone.png','https://react-capstone.herokuapp.com/','https://github.com/b-ellis/react-capstone');
-	
+		
 		var projects = [jam, node, React, Fullstack];
 		var currentProjectIndex = 0;
 	
